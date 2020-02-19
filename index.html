@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" ng-app="NameCalculator">
   <head>
     <meta charset="utf-8">
-    <title>hello p</title>
+
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Angular App</title>
   </head>
   <body>
-<h1>hello Punam</h1>
+    <h1>Angular app</h1>
+
+<div ng-controller="NameCalculatorController">
+  <input type="text"  ng-model="name" ng-keyup="countVal();">
+</br>
+Ascii Value:{{total}}
+
+</div>
+<a href="NameCalculator.html">Calculator</a>
+
   </body>
 </html>
